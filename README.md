@@ -138,6 +138,11 @@ To create a variable width font (i.e. an `i` is skinnier than a `w`), just add `
 
 Here's the minecraftia result image with a variable width: ![](examples/hello_minecraftia_var.png)
 
+For a variable width font, the `MeasureString()` function returns a
+conservative width. If you want the actual width, then look at the value
+returned by DrawString(), and trim the resulting image to this width.
+
+
 License
 -------
 
